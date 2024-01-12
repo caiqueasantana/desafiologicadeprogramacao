@@ -1,5 +1,5 @@
 class Heroi {
-  constructor(nome, idade, tipo) {
+  constructor(nome,idade, tipo) {
     this.nome = nome;
     this.idade = idade;
     this.tipo = tipo;
@@ -9,19 +9,19 @@ class Heroi {
     let ataque = "";
     switch (this.tipo) {
       case "mago":
-        ataque = "usou magia";
+        ataque = "magia";
         break;
       case "guerreiro":
-        ataque = "usou espada";
+        ataque = "espada";
         break;
       case "monge":
-        ataque = "usou artes marciais";
+        ataque = " marciais";
         break;
       case "ninja":
-        ataque = "usou shuriken";
+        ataque = "shuriken";
         break;
       default:
-        ataque = "usou um ataque genérico";
+        ataque = "um ataque genérico";
     }
 
     console.log(`O ${this.tipo} ${this.nome} atacou usando ${ataque}`);
